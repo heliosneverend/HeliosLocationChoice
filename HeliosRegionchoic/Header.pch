@@ -1,0 +1,27 @@
+//
+//  Header.pch
+//  HeliosRegionchoic
+//
+//  Created by beyo-zhaoyf on 2017/7/25.
+//  Copyright © 2017年 beyo-zhaoyf. All rights reserved.
+//
+
+#ifndef Header_pch
+#define Header_pch
+
+/****** 第三方库 ******/
+#import <Masonry.h>
+
+/****** 宏 ******/
+//宽高
+#define Screen_Width       [UIScreen mainScreen].bounds.size.width
+#define Screen_Height      [UIScreen mainScreen].bounds.size.height
+
+#define Color_RGB(r, g, b) [UIColor colorWithRed:(r)/255.0 green:(g)/255.0 blue:(b)/255.0  alpha:1.0]
+#define Color_RGB_Alpha(r, g, b, a) [UIColor colorWithRed:(r)/255.0 green:(g)/255.0 blue:(b)/255.0  alpha:(a)]
+#define HeliosRandomColor [UIColor colorWithRed:arc4random_uniform(256)/255.0 green:arc4random_uniform(256)/255.0 blue:arc4random_uniform(256)/255.0 alpha:1.0]
+#define Color_Line         Color_RGB(230, 230, 230)
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+
+#endif /* Header_pch */
